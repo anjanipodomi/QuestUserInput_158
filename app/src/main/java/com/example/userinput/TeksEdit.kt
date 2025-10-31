@@ -1,11 +1,18 @@
 package com.example.userinput
-
-import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun FormDataDiri(modifier: Modifier
-) {
+fun FormDataDiri(modifier: Modifier) {
     //variabel variabel untuk mengingat nilai masukan dari keyboard
     var textNama by remember {mutableStateOf("")}
     var textAlamat by remember {mutableStateOf("")}
@@ -21,7 +28,7 @@ fun FormDataDiri(modifier: Modifier
     Column(modifier = Modifier.padding(top = 50.dp),
         verticalArrangement = Arrangement.Top,
 
-        horizontalAligment = Aligment.CenterHorizontally) {
+        horizontalAlignment = Alignment.CenterHorizontally) {
         OutlinedTextField(
             value = textNama,
             singleLine = true,
@@ -39,7 +46,7 @@ fun FormDataDiri(modifier: Modifier
                 Row(modifier = Modifier.selectable(
                     selected = textJK == item,
 
-                    onClick = { tetJK = item}
+                    onClick = { textJK = item}
                 ), verticalAlignment = Alignment.CenterVertically) {
                     RadioButton(
                         selected = textJK == item,
@@ -62,11 +69,11 @@ fun FormDataDiri(modifier: Modifier
                 textAlamat = it
             }
         )
-        divider(
+        Divider(
             modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
                 id = R.dimen.padding_medium
             )),
-            thickness = dimensionResource(R.dimen.divider_tipis),
+            thickness = dimensionResource(R.dimen.Divider_tipis),
             color = Color.DarkGray
         )
         Button(
@@ -82,11 +89,11 @@ fun FormDataDiri(modifier: Modifier
             Text(stringResource(R.string.submit))
         }
 
-        divider(
+        Divider(
             modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_medium), top = dimensionResource(
                 id = R.dimen.padding_medium
             )),
-            thickness = dimensionResource(R.dimen.divider_tipis),
+            thickness = dimensionResource(R.dimen.Divider_tipis),
             color = Color.DarkGray
         )
 
