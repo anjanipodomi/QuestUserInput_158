@@ -53,17 +53,17 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
                 .padding(start = 20.dp)
         ) {
             Text(text = "Jenis Kelamin")
-            gender.forEach {item ->
+            gender.forEach { item ->
                 Row(
                     modifier = Modifier
                         .selectable(
                             selected = textJk == item,
-                            onClick = {textJK = item }
+                            onClick = { textJK = item }
 
                         ),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    RadioButoon(selected = textJK == item, onClick = { textJK = item})
+                    RadioButoon(selected = textJK == item, onClick = { textJK = item })
                     Text(text = item)
                 }
             }
@@ -88,4 +88,8 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
                     Text(text = item)
                 }
             }
+        }
+        Spacer(modifier = Modifier.height(15.dp))
+
+    }
 }
