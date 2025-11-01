@@ -120,5 +120,10 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
         ) {
             Text(text = stringResource(R.string.submit))
         }
+        Divider(
+            modifier = Modifier.padding(vertical = dimensionResource(R.dimen.padding_medium)),
+            thickness = dimensionResource(R.dimen.Divider_tipis),
+            color = Color.DarkGray
+        )
     }
 }
