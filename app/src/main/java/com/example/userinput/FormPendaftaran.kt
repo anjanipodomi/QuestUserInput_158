@@ -125,5 +125,12 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
             thickness = dimensionResource(R.dimen.Divider_tipis),
             color = Color.DarkGray
         )
+        ElevatedCard(
+            elevation = CardDefaults.cardElevation(defaultElevation = 10.dp),
+            colors = CardDefaults.cardColors(containerColor = Color.Black),
+            modifier = Modifier
+                .height(130.dp)
+                .width(320.dp)
+        )
     }
 }
