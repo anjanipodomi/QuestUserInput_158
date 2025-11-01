@@ -1,9 +1,15 @@
 package com.example.userinput
 
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.selection.selectable
-import androidx.compose.runtime.Composable
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
 
 
 @Composable
@@ -57,13 +63,13 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
                 Row(
                     modifier = Modifier
                         .selectable(
-                            selected = textJk == item,
+                            selected = textJK == item,
                             onClick = { textJK = item }
 
                         ),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
-                    RadioButoon(selected = textJK == item, onClick = { textJK = item })
+                    RadioButton(selected = textJK == item, onClick = { textJK = item })
                     Text(text = item)
                 }
             }
