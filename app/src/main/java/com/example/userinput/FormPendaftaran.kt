@@ -67,8 +67,15 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
                     Text(text = item)
                 }
             }
-
         }
+        Spacer(modifier = Modifier.height(10.dp))
+        Column(
+            modifier = Modifier
+                .fillMaxWidth(0.8f)
+                .padding(start = 20.dp)
+        ) {
+            Text(text = "Status Perkawinan")
+            statusPerkawinan.forEach { item ->
     }
 
 
