@@ -26,7 +26,15 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
             .fillMaxSize(),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
-    )
+    ) {
+        Text(
+            text = "Formulir Pendaftaran",
+            style = MaterialTheme.typography.headlineSmall,
+            color = Color(0xFF7B1FA2),
+            modifier = Modifier.padding(bottom = 20.dp)
+
+        )
+    }
 
 
 }
