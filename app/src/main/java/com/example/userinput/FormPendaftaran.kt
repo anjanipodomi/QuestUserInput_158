@@ -83,8 +83,9 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
                             onClick = { textStatus = item }
                         ),
                     verticalAlignment = Alignment.CenterVertically
-                )
-    }
-
-
+                ) {
+                    RadioButton(selected = textStatus == item, onClick = { textStatus = item })
+                    Text(text = item)
+                }
+            }
 }
