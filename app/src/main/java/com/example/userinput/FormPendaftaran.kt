@@ -1,6 +1,7 @@
 package com.example.userinput
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 
 
@@ -43,6 +44,19 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
             onValueChange = { textNama = it }
 
         )
+
+        Spacer(modifier = Modifier.height(15.dp))
+        Column(
+            modifier = Modifier
+                .fillMaxWidth(0.8f)
+                .padding(start = 20.dp)
+        ) {
+            Text(text = "Jenis Kelamin")
+            gender.forEach {item ->
+
+            }
+
+        }
     }
 
 
