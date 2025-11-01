@@ -1,5 +1,6 @@
 package com.example.userinput
 
+import androidx.compose.foundation.selection.selectable
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
@@ -53,6 +54,12 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
         ) {
             Text(text = "Jenis Kelamin")
             gender.forEach {item ->
+                Row(
+                    modifier = Modifier
+                        .selectable(
+
+                        )
+                )
 
             }
 
