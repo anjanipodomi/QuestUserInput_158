@@ -32,6 +32,15 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
             style = MaterialTheme.typography.headlineSmall,
             color = Color(0xFF7B1FA2),
             modifier = Modifier.padding(bottom = 20.dp)
+        )
+
+        OutlinedTextField(
+            value = textNama,
+            singleLine = true,
+            shape = MaterialTheme.shapes.large,
+            modifier = Modifier.width(300.dp),
+            label = { Text(text = "Nama Lengkap") },
+            onValueChange = { textNama = it }
 
         )
     }
