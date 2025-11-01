@@ -99,5 +99,10 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
             onValueChange = { textAlamat = it }
         )
 
+        Divider(
+            modifier = Modifier.padding(vertical = dimensionResource(R.dimen.padding_medium)),
+            thickness = dimensionResource(R.dimen.Divider_tipis),
+            color = Color.DarkGray
+        )
     }
 }
