@@ -91,5 +91,13 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
         }
         Spacer(modifier = Modifier.height(15.dp))
 
+        OutlinedTextField(
+            value = textAlamat,
+            singleLine = true,
+            modifier = Modifier.width(300.dp),
+            label = { Text(text = "Alamat") },
+            onValueChange = { textAlamat = it }
+        )
+
     }
 }
