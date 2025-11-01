@@ -57,10 +57,15 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
                 Row(
                     modifier = Modifier
                         .selectable(
+                            selected = textJk == item,
+                            onClick = {textJK = item }
 
-                        )
-                )
-
+                        ),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    RadioButoon(selected = textJK == item, onClick = { textJK = item})
+                    Text(text = item)
+                }
             }
 
         }
