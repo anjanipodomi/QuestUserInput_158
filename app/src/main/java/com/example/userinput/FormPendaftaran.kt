@@ -116,5 +116,9 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
                 alamat = textAlamat
                 status = textStatus
             },
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF7B1FA2))
+        ) {
+            Text(text = stringResource(R.string.submit))
+        }
     }
 }
