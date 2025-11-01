@@ -1,6 +1,7 @@
 package com.example.userinput
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 
 
 @Composable
@@ -18,5 +19,14 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
 
     val gender = listOf("Laki-laki", "Perempuan")
     val statusPerkawinan = listOf("Janda", "Lajang", "Duda")
+
+    Column(
+        modifier = Modifier
+            .padding(top = 40.dp)
+            .fillMaxSize(),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    )
+
 
 }
