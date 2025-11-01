@@ -110,6 +110,11 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
                 .width(200.dp)
                 .height(50.dp),
             enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty(),
-
+            onClick = {
+                nama = textNama
+                jenis = textJK
+                alamat = textAlamat
+                status = textStatus
+            },
     }
 }
