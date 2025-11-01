@@ -104,5 +104,12 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
             thickness = dimensionResource(R.dimen.Divider_tipis),
             color = Color.DarkGray
         )
+
+        Button(
+            modifier = Modifier
+                .width(200.dp)
+                .height(50.dp),
+            enabled = textNama.isNotEmpty() && textAlamat.isNotEmpty(),
+
     }
 }
