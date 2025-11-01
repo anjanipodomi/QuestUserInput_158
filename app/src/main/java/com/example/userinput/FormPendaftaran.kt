@@ -76,6 +76,14 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
         ) {
             Text(text = "Status Perkawinan")
             statusPerkawinan.forEach { item ->
+                Row(
+                    modifier = Modifier
+                        .selectable(
+                            selected = textStatus == item,
+                            onClick = { textStatus = item }
+                        ),
+                    verticalAlignment = Alignment.CenterVertically
+                )
     }
 
 
