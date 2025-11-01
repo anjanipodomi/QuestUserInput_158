@@ -131,6 +131,10 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
             modifier = Modifier
                 .height(130.dp)
                 .width(320.dp)
-        )
+        ) {
+            Column(
+                modifier = Modifier.padding(horizontal = 10.dp, vertical = 15.dp)
+            )
+        }
     }
 }
