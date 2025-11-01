@@ -134,7 +134,13 @@ fun FormPendaftaran(modifier : Modifier = Modifier) {
         ) {
             Column(
                 modifier = Modifier.padding(horizontal = 10.dp, vertical = 15.dp)
-            )
+            ) {
+                Text(text = "Nama      : +nama", color = Color.White)
+                Text(text = "Gender    : +jenis", color = Color.White)
+                Text(text = "Status    : +status", color = Color.White)
+                Text(text = "Alamat    : +alamat", color = Color.White)
+            }
+
         }
     }
 }
